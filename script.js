@@ -37,6 +37,8 @@ var sliderContainerWidth=sliderContainer.clientWidth
 var cardWidth=sliderContainerWidth/elementToShow
 
 slider.style.width=card.length*cardWidth+'px'
+slider.style.transition='margin'
+slider.style.transitionDuration='2s'
 
 for (let index = 0; index < card.length; index++) {
     const element = card[index];

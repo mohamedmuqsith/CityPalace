@@ -88,69 +88,54 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
 
 <!-- slider-section -->
 
-<section>
-    <div class="flex m-5">
-        <div class="w-2/12 flex items-center ">
+<section class="relative w-full max-w-screen-lg mx-auto m-5">
+    <div class="relative">
+        <!-- Slider Container -->
+        <div id="sliderContainer" class="overflow-hidden w-full relative">
+            <div id="slider" class="flex transition-all duration-500 ease-in-out">
+                <!-- Slider Items -->
+                <div class="w-full flex-shrink-0 relative">
+                    <img class="w-full object-cover h-96" src="image/Best_sallar_2.jpg" alt="">
+                </div>
+                <div class="w-full flex-shrink-0 relative">
+                    <img class="w-full object-cover h-96" src="image/Best_salar_16.png" alt="">
+                </div>
+                <div class="w-full flex-shrink-0 relative">
+                    <img class="w-full object-cover h-96" src="image/Best_sallar_2.jpg" alt="">
+                </div>
+                <div class="w-full flex-shrink-0 relative">
+                    <img class="w-full object-cover h-96" src="image/Screenshot 2025-02-14 190453.png" alt="">
+                </div>
+            </div>
 
-            <div class="text-right w-full">
-              <button onclick="prv()" class="rounded-full border p-3 m-2 bg-white shadow-lg border-gray-400">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-                  </svg>
+            <!-- Overlay Text and Button -->
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center bg-black bg-opacity-50">
+                <h2 class="text-3xl font-bold">Level up your style with our</h2>
+                <p class="text-lg font-semibold">Summer Collections</p>
+                <button class="mt-4 px-6 py-2 bg-white text-black font-semibold rounded-full shadow-lg">
+                    Shop Now →
                 </button>
             </div>
-   
-            
         </div>
 
+        <!-- Previous Button -->
+        <button onclick="prv()" class="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow-lg p-3 rounded-full border border-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+            </svg>
+        </button>
 
-        <div id="sliderContainer" class="w-full overflow-hidden">
-            <div id="slider" class="flex   w-full ">
-               
-                <div class="flex">
-                <img class=" object-cover" src="image/Best_salar_16.png" alt="">
-        
-            
-                <img class="object-cover" src="image/Screenshot 2025-02-14 190453.png" alt="">
-
-            
-
-           
-                <img class="object-cover" src="image/Screenshot 2025-02-14 190453.png" alt="">  
-
-                <img class="object-cover" src="image/Best_salar_16.png" alt="">
-           
-
-          
-                <img class="object-cover" src="image/Screenshot 2025-02-14 190453.png" alt="">  
-           
-          
-                <img class="object-cover" src="image/Screenshot 2025-02-14 190453.png" alt="">  
-            </div>
-        </div>
-
-           
-
-        </div>
-
-
-        <div class="w-2/12 flex items-center">
-
-            <div class=" w-full">
-                <button onclick="next()" class="rounded-full border p-3 m-2 bg-white shadow-lg  border-gray-400">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                  </svg>
-                </button>
-
-
-            </div>
-
-        </div>
-
-
+        <!-- Next Button -->
+        <button onclick="next()" class="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white shadow-lg p-3 rounded-full border border-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+            </svg>
+        </button>
     </div>
 </section>
+
+
+
 
 <script src="script.js"></script>
 </body>

@@ -16,14 +16,14 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
 <body>
 <!-- offer  -->
     <section >
-        <div id="offer" class=" flex gap-20  text-white  justify-center p-2 md:flex text-1xl fixed w-full md:font-bold " style="background-color:#095F78">
+        <div id="offer" class=" flex gap-20  text-white  z-50 justify-center p-2 md:flex text-1xl fixed w-full md:font-bold " style="background-color:#095F78">
             <h1 class="">Sign Up and GET 20% OFF for your first Order </h1>
             <h1 class="cursor-pointer" id="close-offer">X</h1>
         </div>
     </section>
     
     <!-- nav -->
-<nav class=" p-3 flex items-center justify-between shadow-lg ">
+<nav class=" p-3 flex items-center justify-between shadow-lg z-30 sticky top-0 bg-white ">
     <h1 class="text-2xl font-bold">CITY PALACE</h1>
 
     <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6  md:hidden ">
@@ -57,7 +57,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
 
 <!-- side navbar -->
 
-<section id="sidenav" class=" fixed top-0 z-20 transition-all duration-1000 " style="width:50%; height:100vh;left: -50%;background-color:#095F78;">
+<section id="sidenav" class=" fixed top-0 z-50 transition-all duration-1000 " style="width:50%; height:100vh;left: -50%;background-color:#095F78;">
     <div  class="p-5 font-bold">
         <p id="close-nav" class="text-right cursor-pointe text-white">X</p>
     </div>
@@ -95,16 +95,18 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
             <div id="slider" class="flex transition-all duration-500 ease-in-out">
                 <!-- Slider Items -->
                 <div class="w-full flex-shrink-0 relative">
-                    <img class="w-full object-cover h-96" src="image/Best_sallar_2.jpg" alt="">
+                    <img class="w-full object-cover h-96" src="image/CITYPALACE-4.png" alt="">
                 </div>
                 <div class="w-full flex-shrink-0 relative">
-                    <img class="w-full object-cover h-96" src="image/Best_salar_16.png" alt="">
+                    <img class="w-full object-cover h-96" src="image/CITYPALACE-2.png" alt="">
                 </div>
                 <div class="w-full flex-shrink-0 relative">
-                    <img class="w-full object-cover h-96" src="image/Best_sallar_2.jpg" alt="">
+                    <img class="w-full object-cover h-96" src="image/CITYPALACE-3.png" alt="">
                 </div>
+               
+
                 <div class="w-full flex-shrink-0 relative">
-                    <img class="w-full object-cover h-96" src="image/Screenshot 2025-02-14 190453.png" alt="">
+                    <img class="w-full object-cover h-96" src="image/CITYPALACE-1.png" alt="">
                 </div>
             </div>
 
@@ -134,7 +136,43 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
     </div>
 </section>
 
+<!-- Brands section -->
+<section>
+ <h1 class="text-3xl font-bold m-4">Brands</h1>
 
+ <div class="m-4 flex gap-10 items-center justify-around">
+ 
+
+    <div class="w-full h-full">
+        <img class=" shadow-lg " src="image/BORCELLE .png" alt="">
+        </div>
+
+        <div class="w-full h-full">
+            <img class=" shadow-lg" src="image/MUKSHITH.png" alt="">
+            </div>
+    
+            <div class="w-full h-full ">
+                <img class=" shadow-lg" src="image/SACHACLOTH.png" alt="">
+                </div>
+
+                <div class="w-full h-full ">
+                    <img class=" shadow-lg" src="image/LARANA.png" alt="">
+                    </div>
+
+                    <div class="w-full h-full ">
+                        <img class=" shadow-lg" src="image/Simple.png" alt="">
+                        </div>
+
+                        <div class="w-full h-full ">
+                            <img class=" shadow-lg" src="image/MUQSHIII.png" alt="">
+                            </div>
+        
+       
+    
+   
+    </div>
+ </div>
+</section>
 
 
 <script src="script.js"></script>

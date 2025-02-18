@@ -3,7 +3,7 @@ var offer=document.getElementById('offer')
 var X=document.getElementById('close-offer')
 
 X.addEventListener('click',function(){
-    offer.style.right='-100%'
+    offer.style.display='none'
 })
 
 // side nav

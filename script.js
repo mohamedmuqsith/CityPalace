@@ -8,17 +8,21 @@ X.addEventListener('click',function(){
 
 // side nav
 
-var sidenav=document.getElementById('sidenav')
-var menu=document.getElementById('menuicon')
-var closenav=document.getElementById('close-nav')
+var sidenav = document.getElementById('sidenav');
+var menu = document.getElementById('menuicon'); // Ensure this element exists in HTML
+var closenav = document.getElementById('close-nav');
 
-menu.addEventListener('click',function(){
-    sidenav.style.left=0
-})
+if (menu) {
+    menu.addEventListener('click', function () {
+        sidenav.style.left = '0';
+    });
+}
 
-closenav.addEventListener('click',function(){
-    sidenav.style.left='-50%'
-})
+if (closenav) {
+    closenav.addEventListener('click', function () {
+        sidenav.style.left = '-50%';
+    });
+}
 
 
 // slider-container
@@ -55,3 +59,4 @@ function next() {
         slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
     }
 }
+

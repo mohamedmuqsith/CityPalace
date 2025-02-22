@@ -20,3 +20,14 @@ menuicon.addEventListener('click',function(){
 closenav.addEventListener('click',function(){
     sidenav.style.left='-50%'
 })
+
+var search = document.getElementById('search');
+var image1 = document.getElementById('image1');
+
+search.addEventListener('click', function() { 
+    if (image1.style.display === 'flex') {
+        image1.style.display = 'none'; 
+    } else {
+        image1.style.display = 'flex'; 
+    }
+});

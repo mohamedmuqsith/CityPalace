@@ -38,7 +38,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
             </li>
     
             <li>
-                <a class="hover:underline  hover:text-black " href="#brand">New Arrival</a>
+                <a class="hover:underline  hover:text-black " href="#">New Arrival</a>
             </li>
     
             <li>
@@ -50,7 +50,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
             </li>
     
             <li>
-                <a class="hover:underline  hover:text-black" href="#">Contact Us</a>
+                <a class="hover:underline  hover:text-black" href="contact.html">Contact Us</a>
             </li>
         </ul>
     
@@ -81,26 +81,31 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
             </li>
     
             <li class="ml-10">
-                <a class="hover:underline text-white   hover:text-black" href="#">Contact Us</a>
+                <a class="hover:underline text-white   hover:text-black" href="contact.html">Contact Us</a>
             </li>
         </ul>
     
 
-        <section class="">
-           
+        <section>
+            <div class=" flex flex-col items-center justify-center mt-10 m-6">
+                <h1 class="text-3xl font-bold">Collections</h1>
+                <p class="text-xl text-center">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+            </div>
+            <hr class="mt-10 border-2 border-gray-600 w-10/12 mx-auto">
+        </div>
             <div class="flex mt-5">
                
                 <div class="ml-5  min-w-0 flex-grow ">
 
                     <div>
-                    <h1 class="text-xl font-bold mb-2 md:text-5xl lg:text-6xl">Occasion</h1>
-                    <label class="block"><input  type="checkbox"> <span class="text-xs md:text-2xl lg:text-2xl">Summer</span></label>
+                    <h1 class="text-xl font-bold mb-2 md:text-5xl lg:text-6xl 2xl:text-4xl">Occasion</h1>
+                    <label class="block"><input  type="checkbox" id="search"> <span class="text-xs md:text-2xl lg:text-2xl">Summer</span></label>
                     <label class="block"><input type="checkbox"> <span class="text-xs md:text-2xl lg:text-2xl">Party</span></label>
                     <label class="block"><input type="checkbox"> <span class="text-xs md:text-2xl lg:text-2xl">Beach</span></label>
                 </div>
                 
                 <div class="mt-10">
-                    <h1 class="text-xl font-bold mb-2 md:text-5xl lg:text-6xl">Colors</h1>
+                    <h1 class="text-xl font-bold mb-2 md:text-5xl lg:text-6xl 2xl:text-4xl">Colors</h1>
                     <label class="block"><input type="checkbox"> <span class="text-xs md:text-2xl lg:text-2xl">Red</span></label>
                     <label class="block"><input type="checkbox"> <span class="text-xs md:text-2xl lg:text-2xl">Blue</span></label>
                     <label class="block"><input type="checkbox"> <span class="text-xs md:text-2xl lg:text-2xl"> White</span></label>
@@ -109,7 +114,7 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
                 </div>
 
                 <div class="mt-10">
-                    <h1 class="text-xl font-bold mb-2 md:text-5xl lg:text-6xl">Arrivals</h1>
+                    <h1 class="text-xl font-bold mb-2 md:text-5xl lg:text-6xl 2xl:text-4xl">Arrivals</h1>
                     <label class="block"><input  type="checkbox"> <span class="text-xs md:text-2xl lg:text-2xl"> New</span></label>
                     <label class="block"><input type="checkbox"> <span class="text-xs md:text-2xl lg:text-2xl"> Old</span></label>
                 </div>
@@ -117,50 +122,51 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
                 </div>
                 
                 <div class="flex-grow min-w-0 m-10">
+                    
 
                 <form action="" class="flex items-center border rounded-lg p-2">
-                    <input type="text" class="border  focus:outline-none border-none rounded-lg  flex-grow " placeholder="Search">
+                    <input type="text" class="border  focus:outline-none border-none rounded-lg  flex-grow " placeholder="Search"id="search">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                       </svg>
                       
                 </form>
              
-                <div class="flex gap-5 mt-5 justify-between">
-                <div>
-                    <img src="image/collection_image1.png" alt="" class="border border-black w-20  md:w-60 lg:w-64 xl:w-80 2xl:w-96">
+                <div class="flex gap-5 mt-5 justify-between hidden"id="image1">
+                <div class="transition duration-1000 transform hover:-translate-x-2 cursor-pointer">
+                    <img src="image/collection_image1.png" alt="" class=" w-20  md:w-60 lg:w-64 xl:w-80 2xl:w-96" >
+                </div >
+                <div class="transition duration-1000 transform hover:-translate-x-2 cursor-pointer">
+                    <img src="image/collection_image2.png" alt="" class=" w-20  md:w-60 lg:w-64 xl:w-80 2xl:w-96">
                 </div>
-                <div>
-                    <img src="image/collection_image2.png" alt="" class="border border-black w-20  md:w-60 lg:w-64 xl:w-80 2xl:w-96">
-                </div>
-                <div>
-                    <img src="image/collection_image3.png" alt="" class="border border-black w-20  md:w-60 lg:w-64 xl:w-80 2xl:w-96">
+                <div class="transition duration-1000 transform hover:-translate-x-2 cursor-pointer">
+                    <img src="image/collection_image3.png" alt="" class=" w-20  md:w-60 lg:w-64 xl:w-80 2xl:w-96">
                 </div>
                
             </div>
 
             <div class="flex gap-5 mt-5 justify-between">
-                <div>
-                    <img src="image/collection_image4 (1).png" alt="" class="border border-black w-20 md:w-60 lg:w-64 xl:w-80 2xl:w-96">
+                <div class="transition duration-1000 transform hover:-translate-x-2 cursor-pointer">
+                    <img src="image/collection_image4 (1).png" alt="" class=" w-20 md:w-60 lg:w-64 xl:w-80 2xl:w-96">
                 </div>
-                <div>
-                    <img src="image/collection_image5.png" alt="" class="border border-black w-20  md:w-60 lg:w-64 xl:w-80 2xl:w-96">
+                <div class="transition duration-1000 transform hover:-translate-x-2 cursor-pointer">
+                    <img src="image/collection_image5.png" alt="" class=" w-20  md:w-60 lg:w-64 xl:w-80 2xl:w-96">
                 </div>
-                <div>
-                    <img src="image/collection_image6.png" alt="" class="border border-black w-20  md:w-60 lg:w-64 xl:w-80 2xl:w-96">
+                <div class="transition duration-1000 transform hover:-translate-x-2 cursor-pointer">
+                    <img src="image/collection_image6.png" alt="" class=" w-20  md:w-60 lg:w-64 xl:w-80 2xl:w-96">
                 </div>
                 
             </div>
            
             <div class="flex gap-5 mt-5 justify-between">
-                <div>
-                    <img src="image/collection_image7 (1).png" alt="" class="border border-black w-20 md:w-60 lg:w-64 xl:w-80 2xl:w-96" >
+                <div class="transition duration-1000 transform hover:-translate-x-2 cursor-pointer">
+                    <img src="image/collection_image7 (1).png" alt="" class=" w-20 md:w-60 lg:w-64 xl:w-80 2xl:w-96" >
                 </div>
-                <div>
-                    <img src="image/collection_image8.png" alt="" class="border border-black w-20 md:w-60 lg:w-64 xl:w-80 2xl:w-96">
+                <div class="transition duration-1000 transform hover:-translate-x-2 cursor-pointer">
+                    <img src="image/collection_image8.png" alt="" class=" w-20 md:w-60 lg:w-64 xl:w-80 2xl:w-96">
                 </div>
-                <div>
-                    <img src="image/collection_image5.png" alt="" class="border border-black w-20  md:w-60 lg:w-64 xl:w-80 2xl:w-96">
+                <div class="transition duration-1000 transform hover:-translate-x-2 cursor-pointer">
+                    <img src="image/collection_image5.png" alt="" class=" w-20  md:w-60 lg:w-64 xl:w-80 2xl:w-96">
                 </div>
               
             </div>
@@ -172,6 +178,9 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
 
                 
             </div>
+
+        
+
         </section>
         
 
@@ -212,7 +221,8 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
            
         </footer>
         
-
+        
+        
     
     <script src="collection.js"> </script>
 </body>
